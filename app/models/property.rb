@@ -12,7 +12,7 @@ class Property < ActiveRecord::Base
 	before_save :remove_characters, :yearly_yield, :yearly_yield_percent
 	before_create :remove_characters, :yearly_yield, :yearly_yield_percent
 
-  after_validation :shorten_post_code	
+  	after_validation :shorten_post_code	
 
   
 
