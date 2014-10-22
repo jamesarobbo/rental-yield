@@ -2,4 +2,6 @@
 
 Simple rental yield calculator for code challenge.
 
+Uses the Nestoria API to compare yields of nearby properties.
+
 
