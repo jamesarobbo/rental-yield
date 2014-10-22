@@ -10,7 +10,7 @@
   	<div class="details">
   		<p>Property Type: <%= i['property_type'].present? ? i['property_type'].upcase : "Not specified" %></p>
       <p>Bedrooms: <%= i['bedroom_number'] %></p>
-      <p>Location: <%= i['title'] %></p>
+      <p>Description: <%= i['title'] %></p>
       <p>Rent: <%= i['price_formatted'] %></p>
       
       <% if i['price_type'] == "weekly" %>
