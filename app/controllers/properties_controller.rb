@@ -32,7 +32,7 @@ class PropertiesController < ApplicationController
 
     @property = Property.find(params[:id])
 
-    @response = HTTParty.get("http://api.nestoria.co.uk/api?place_name=#{@property.postal_code_short}&action=search_listings&pretty=1&encoding=json&listing_type=rent&country=uk")
+    @response = HTTParty.get("http://api.nestoria.co.uk/api?place_name=#{@property.postal_code}&action=search_listings&pretty=1&encoding=json&listing_type=rent&country=uk")
 
     @data = @response['response']['listings']
 
