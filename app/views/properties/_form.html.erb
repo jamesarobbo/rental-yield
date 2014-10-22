@@ -1,0 +1,14 @@
+<%= simple_form_for(@property, html: {class: 'form-horizontal' }) do |f| %>
+
+  <div class="form-group">
+	
+  	<%= f.input :email, label: "Email Address", placeholder: "james@example.com", input_html: {class: 'form-control'}, required: false %>
+  	<%= f.input :phone_number, label: "Phone Number", placeholder: "033 3240 0189", input_html: {class: 'form-control'}, required: false %>
+  	<%= f.input :postal_code, label: "Property Post Code", placeholder: "E1 8EY", input_html: {class: 'form-control'}, required: false %>
+  	<%= f.input :property_price, label: "Property Price (£)", placeholder: "160000", input_html: {class: 'form-control'}, required: false %>
+  	<%= f.input :property_rent, label: "Property Rent (£/month)", placeholder: "600", input_html: {class: 'form-control'}, required: false %>
+    <%= f.button :submit, "Calculate yield" %>
+
+  </div>
+
+<% end %>

@@ -1,0 +1,99 @@
+
+html, body, form, .btn {
+	text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+.form-group label abbr {
+   border-bottom: 0px; 
+ }
+
+ .help-inline {
+  color:#c0392b;
+ }
+
+.col-md-8 {
+	border-bottom: 1px solid #525252;
+}
+
+header {
+  position: relative;
+}
+
+header .row h1 {
+	float:left;
+}
+
+header .row h4 {
+	float:right;
+}
+
+.hero {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.calculator {
+  margin-top: 25px;
+  margin-bottom: 50px;
+  border-top: 1px solid #525252;
+  position: relative;
+}
+
+.calculator form {
+  padding-top: 25px;
+}
+
+.btn {
+  margin-top: 10px;
+  background-color: #E66212;
+  color:#fff;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+span {
+  font-weight: 700;
+}
+
+.yield {
+  margin-top: 25px;
+}
+
+.content {
+  margin-top: 25px;
+}
+
+.property-summary {
+  position: relative;
+  margin-top: 50px;
+  padding-bottom: 50px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.property-summary .image {
+  float: left;
+  clear:both;
+  margin-right: 50px;
+}
+
+.other-yield {
+  width:auto;
+  margin-left: 210px;
+  padding:5px;
+  background-color: #DBECD4;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,32 @@
+<h3>Properties near <%= @property.postal_code_short.upcase %></h3>
+
+
+<% @data.map do |i| %>
+
+  <div class="property-summary">
+    <div class="image">
+      <%= image_tag(i['img_url']) %>
+    </div>
+  	<div class="details">
+  		<p>Property Type: <%= i['property_type'].upcase %></p>
+      <p>Bedrooms: <%= i['bedroom_number'] %></p>
+      <p>Location: <%= i['title'] %></p>
+      <p>Rent: <%= i['price_formatted'] %></p>
+      
+      <% if i['price_type'] == "weekly" %>
+
+        <% yearly_yield = (i['price'] * 4) * 12 %>
+
+      <% else %>
+
+       <% yearly_yield = i['price'] * 12 %>
+
+      <% end %>
+      <div class="other-yield">
+      <h5>Yearly yield: <%= number_to_currency(yearly_yield, unit: '£') %></h5>
+      </div>
+  	</div>
+  </div>
+
+
+<% end %>
