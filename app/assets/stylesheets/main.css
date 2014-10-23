@@ -12,31 +12,25 @@ html, body, form, .btn {
   color:#c0392b;
  }
 
-.col-md-8 {
-	border-bottom: 1px solid #525252;
-}
+ .navbar {
+  border-radius: 0 0 4px 4px;
+  background-color: #E66212;
+  border-top: none;
+ }
 
-header {
-  position: relative;
-}
-
-header .row h1 {
-	float:left;
-}
-
-header .row h4 {
-	float:right;
-}
+ .navbar-header .navbar-brand {
+    color:#fff;
+    font-size: 24px;
+  }
 
 .hero {
-  margin-top: 25px;
   text-align: center;
 }
 
 .calculator {
   margin-top: 25px;
   margin-bottom: 50px;
-  border-top: 1px solid #525252;
+  border-top: 1px solid #bdbdbd;
   position: relative;
 }
 
