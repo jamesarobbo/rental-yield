@@ -24,8 +24,15 @@ class Property < ActiveRecord::Base
   end
 
   def yearly_yield
+    if maintenance.nil?
 
-    yearly_yield = (property_rent * 12)-(maintenance * 12)
+    yearly_yield = (property_rent * 12)
+
+    else
+
+      yearly_yield = (property_rent * 12)-(maintenance * 12)
+    end  
+
 
   end
 
