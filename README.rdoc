@@ -1,6 +1,6 @@
 == Rentify Rental Yield Calculator
 
-Simple rental yield calculator for code challenge.
+Simple rental yield calculator.
 
 Uses the Nestoria API to compare yields of nearby properties.
 
