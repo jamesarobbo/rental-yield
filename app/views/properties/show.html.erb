@@ -29,11 +29,11 @@
         <td><%=number_to_currency(@property.property_rent, { unit: "£"})%></td>
       </tr>
       <tr class="success">
-        <th>Yearly Yield</th>
+        <th>Net Yearly Yield</th>
         <td><%=number_to_currency(@property.yearly_yield, { unit: "£"})%></td>
       </tr>
       <tr >
-        <th>Yearly Yield Percentage</th>
+        <th>Net Yearly Yield Percentage</th>
         <td><%=(@property.yearly_yield_percent).round(2)%>%</td>
       </tr>
     </tbody>

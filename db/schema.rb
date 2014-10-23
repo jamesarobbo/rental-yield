@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141022113817) do
+ActiveRecord::Schema.define(version: 20141023182625) do
 
   create_table "properties", force: true do |t|
     t.string   "email"
@@ -23,6 +23,7 @@ ActiveRecord::Schema.define(version: 20141022113817) do
     t.datetime "updated_at"
     t.integer  "yearly_yield"
     t.float    "yearly_yield_percent"
+    t.integer  "maintenance"
   end
 
 end

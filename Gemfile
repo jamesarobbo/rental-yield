@@ -39,6 +39,7 @@ gem 'spring',        group: :development
 # gem 'debugger', group: [:development, :test]
 
 gem "twitter-bootstrap-rails"
+
 gem "simple_form"
 gem "httparty"
 gem 'rails_12factor', group: :production
