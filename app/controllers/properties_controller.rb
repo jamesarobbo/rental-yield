@@ -1,5 +1,7 @@
 class PropertiesController < ApplicationController
 
+  rescue_from ActiveRecord::RecordNotFound, with: :record_not_found
+
   def new
 
     @property = Property.new
@@ -26,6 +28,12 @@ class PropertiesController < ApplicationController
 
     @property = Property.find(params[:id])
 
+  end
+
+  def record_not_found
+
+    redirect_to root_path
+    
   end
 
   def other_properties
