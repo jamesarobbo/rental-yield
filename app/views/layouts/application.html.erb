@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Rentify - Rental Yield Calculator</title>
+  <title>Rental Yield Calculator</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -25,6 +25,12 @@
     </div>
 
     <%= yield %>
+
+    <footer>
+      <div class="row">
+        Made by <%= link_to "James Robinson", "http://www.jamesarobinson.me", target: "_blank" %> | Rental yield uses the <%= link_to "Nestoria API", "http://www.nestoria.co.uk/", target: "_blank" %> 
+      </div>
+    </footer>
 
   </div>
 </body>
