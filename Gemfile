@@ -51,5 +51,5 @@ gem 'capistrano'
 gem 'capistrano-rails'
 gem 'capistrano-bundler'
 # gem 'cap-ec2'
-gem "net-ssh", "~> 2.7.0"
+# gem "net-ssh", "~> 2.7.0"
 
