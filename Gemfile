@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+ruby '2.1.5'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.4'
@@ -44,4 +45,10 @@ gem "simple_form"
 gem "httparty"
 gem 'rails_12factor', group: :production
 gem 'pg', group: :production
+
+gem 'capistrano'
+gem 'capistrano-rails'
+gem 'capistrano-bundler'
+gem 'cap-ec2'
+
 
