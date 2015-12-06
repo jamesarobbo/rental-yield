@@ -44,12 +44,12 @@ gem "twitter-bootstrap-rails"
 gem "simple_form"
 gem "httparty"
 gem 'rails_12factor', group: :production
-gem 'pg', group: :production
+# gem 'pg', group: :production
 gem 'passenger'
 
 gem 'capistrano'
 gem 'capistrano-rails'
 gem 'capistrano-bundler'
-gem 'cap-ec2'
-
+# gem 'cap-ec2'
+gem "net-ssh", "~> 2.7.0"
 
